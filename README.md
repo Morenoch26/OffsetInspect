@@ -163,6 +163,12 @@ OffsetInspect is well suited for:
 
 ---
 
+## Workflow for Static Detection & Obfuscation of Programmable Executable
+
+[PowerView Static Detection & Obfuscation Workflow](./docs/PowerView-Static-Detection-Workflow.pdf)
+
+---
+
 ## Disclaimer
 
 This tool is intended for authorized security testing, research, and educational purposes only.
