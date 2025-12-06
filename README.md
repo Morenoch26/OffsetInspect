@@ -1,3 +1,5 @@
+![Dread Host Banner](./assets/Dread Host Banner.png)
+
 ![Release](https://img.shields.io/github/v/release/warpedatom/OffsetInspect)
 ![License](https://img.shields.io/github/license/warpedatom/OffsetInspect)
 ![PowerShell](https://img.shields.io/badge/PowerShell-5.1%2F7.x-blue)
