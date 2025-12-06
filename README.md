@@ -9,9 +9,10 @@
 ![Last Commit](https://img.shields.io/github/last-commit/warpedatom/OffsetInspect)
 
 # OffsetInspect  
+
 PE Offset & Hex Context Inspector  
 Author: Jared Perry (Velkris)  
-GitHub: https://github.com/warpedatom  
+GitHub: GitHub: [https://github.com/warpedatom](https://github.com/warpedatom) 
 Version: 1.0.0  
 Date: 2025-12-05  
 
@@ -52,6 +53,12 @@ OffsetInspect is designed for quick, accurate offset validation during offensive
 
 ---
 
+## Download the Latest Release
+
+https://github.com/warpedatom/OffsetInspect/releases/latest
+
+---
+
 ## Installation
 
 Clone the repository:
@@ -60,13 +67,25 @@ Clone the repository:
 git clone https://github.com/warpedatom/OffsetInspect.git
 cd OffsetInspect
 ```
+
+---
+
+## Integrity Verification
+All releases include an automatically generated `checksums.txt` file created by GitHub Actions.
+
+Verify using:
+
+```powershell
+Get-FileHash -Algorithm SHA256 .\OffsetInspect.ps1
+```
+
 ## Run
 
 ```powershell
 .\OffsetInspect.ps1 <FilePath> <Offset>
 ```
 
-## Usage 
+## PowerShell Script Usage 
 
 Basic Example
 ```powershell
@@ -80,6 +99,22 @@ Adjust Byte Window Size
 ```powershell
 .\OffsetInspect.ps1 file.bin 0x200 -ByteWindow 64
 ```
+
+---
+
+## PowerShell Module Usage
+
+OffsetInspect can also be used as an importable module:
+
+```powershell
+Import-Module ./module/OffsetInspect.psm1
+```
+```powershell
+Invoke-OffsetInspect -FilePath C:\AD\PowerView.ps1 -OffsetInput 0xE1AB1
+```
+This signals to users that your tool supports both modes.
+
+---
 
 ## Output Explanation
 
