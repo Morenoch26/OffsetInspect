@@ -112,7 +112,6 @@ Import-Module ./module/OffsetInspect.psm1
 ```powershell
 Invoke-OffsetInspect -FilePath C:\AD\PowerView.ps1 -OffsetInput 0xE1AB1
 ```
-This signals to users that your tool supports both modes.
 
 ---
 
