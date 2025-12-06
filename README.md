@@ -46,7 +46,7 @@ OffsetInspect is designed for quick, accurate offset validation during offensive
 
 ## Screenshot
 
-![OffsetInspect Screenshot](./OffsetInspectScreen.png)
+![OffsetInspect Screenshot](./assets/OffsetInspectScreen.png)
 
 ---
 
