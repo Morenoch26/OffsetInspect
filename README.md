@@ -12,7 +12,7 @@
 
 PE Offset & Hex Context Inspector  
 Author: Jared Perry (Velkris)  
-GitHub: GitHub: [https://github.com/warpedatom](https://github.com/warpedatom) 
+GitHub: [https://github.com/warpedatom](https://github.com/warpedatom) 
 Version: 1.0.0  
 Date: 2025-12-05  
 
