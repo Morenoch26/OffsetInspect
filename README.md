@@ -182,7 +182,6 @@ Hex Dump
 - ASCII output aligned to the right for readability
 
 
-
 ---
 
 ## Intended Use Cases
@@ -190,19 +189,12 @@ Hex Dump
 OffsetInspect is well suited for:
 
 - Red team operations
-
 - Malware analysis and reverse engineering
-
 - Script and payload debugging
-
 - Identifying offset-based indicators
-
 - Inspecting PE, binary, shellcode, PowerShell, or encoded data
-
 - Forensic analysis of embedded byte sequences
-
 - Low-level troubleshooting during security research
-
 
 ---
 
@@ -213,11 +205,8 @@ OffsetInspect supports workflows where precision matters more than automation.
 Common scenarios include:
 
 - Investigating static detections referencing byte offsets
-
 - Validating offset drift after obfuscation or packing
-
 - Identifying which semantic construct triggers detection
-
 - Performing targeted modifications rather than blind mutation
 
 
@@ -230,22 +219,16 @@ This enables operators to preserve functionality while testing detection resilie
 OffsetInspect is intentionally:
 
 - Terminal-native
-
 - Read-only
-
 - Dependency-free
-
 - Focused on accuracy over abstraction
 
 
 It is designed to complement existing tooling such as:
 
 - YARA rules
-
 - Static AV/EDR detections
-
 - Obfuscators and packers
-
 - Reverse engineering workflows
 
 ---
@@ -255,13 +238,9 @@ It is designed to complement existing tooling such as:
 Planned enhancements under consideration:
 
 - Support for inspecting multiple offsets in a single invocation
-
 - Offset range diffing between two files
-
 - Improved handling of non-ASCII encodings
-
 - Optional structured output (JSON) for pipeline integration
-
 - Optional symbol or function boundary hints when available
 
 ---
