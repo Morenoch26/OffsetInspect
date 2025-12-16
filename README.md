@@ -296,7 +296,7 @@ The author assumes no responsibility for misuse, unauthorized activity, or polic
 
 ---
 
-License
+## License
 
 OffsetInspect is released under the MIT License.
 
