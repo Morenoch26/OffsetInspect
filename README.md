@@ -266,3 +266,8 @@ OffsetInspect is released under the MIT License.
 Attribution is appreciated but not required.
 
 ---
+
+<p align="center">
+  <sub>© 2025 Velkris — Educational Red Team Research | MIT Licensed</sub><br>
+  <sub>All testing conducted in isolated lab environments for research and training purposes only.</sub>
+</p>
