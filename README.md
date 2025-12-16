@@ -79,7 +79,7 @@ Clone the repository:
 ```powershell
 git clone https://github.com/warpedatom/OffsetInspect.git
 cd OffsetInspect
-
+```
 
 ---
 
@@ -88,42 +88,43 @@ Integrity Verification
 All releases include an automatically generated checksums.txt file created by GitHub Actions.
 
 Verify using:
-
+```powershell
 Get-FileHash -Algorithm SHA256 .\OffsetInspect.ps1
-
+```
 
 ---
 
 Run
-
+```powershell
 .\OffsetInspect.ps1 <FilePath> <Offset>
-
+```
 
 ---
 
 PowerShell Script Usage
 
 Basic Example:
-
+```powershell
 .\OffsetInspect.ps1 C:\AD\PowerView.ps1 0xE1AB1
+```
 
 Decimal Offset Example:
-
+```powershell
 .\OffsetInspect.ps1 payload.bin 1024
-
+```
 Adjust Byte Window Size:
-
+```powershell
 .\OffsetInspect.ps1 file.bin 0x200 -ByteWindow 64
-
+```
 
 ---
 
 PowerShell Module Usage
 
 OffsetInspect can also be used as an importable module:
-
+```powershell
 Import-Module ./module/OffsetInspect.psm1
-
+```
 Invoke-OffsetInspect -FilePath C:\AD\PowerView.ps1 -OffsetInput 0xE1AB1
 
 
@@ -133,12 +134,13 @@ Output Explanation
 
 File Information
 
+```powershell
 File:              C:\AD\PowerView.ps1
 Offset (input):    0xE1AB1
 Offset (decimal):  924337
 File Size:         924339 bytes
 Line Number:       24810
-
+```
 Displays metadata for the inspected file
 
 Normalizes and converts the provided offset
@@ -150,10 +152,10 @@ Maps the raw byte offset back to a source line
 ---
 
 Line Content Preview
-
+```powershell
 Line 24810: Set-Alias Get-DomainPolicy Get-DomainPolicyData
                        ^
-
+```
 Prints the full source line containing the target byte
 
 The caret indicates the approximate character position corresponding to the offset
@@ -167,13 +169,13 @@ Useful for quickly identifying affected strings, aliases, or instructions
 
 
 ---
-
+```powershell
 Hex Dump
 
 000E1A91  6F 6D 61 69 6E 50 6F 6C 69 63 79 20 47 65 74 2D   omainPolicy Get-
 000E1AA1  44 6F 6D 61 69 6E 50 6F 6C 69 63 79 44 61 74 61   DomainPolicyData
 000E1AB1  0D 0A                                                ..
-
+```
 Contextual hex dump centered around the inspected offset
 
 Offsets displayed as eight-digit hexadecimal values
@@ -253,8 +255,6 @@ Obfuscators and packers
 
 Reverse engineering workflows
 
-
-
 ---
 
 Future Work / Roadmap
@@ -287,13 +287,11 @@ Dynamic execution or analysis
 
 OffsetInspect will remain a read-only inspection utility.
 
-
 ---
 
 Workflow for Static Detection & Obfuscation of Programmable Executable
 
 PowerView Static Detection & Obfuscation Workflow
-
 
 ---
 
@@ -301,7 +299,6 @@ Disclaimer
 
 This tool is intended for authorized security testing, research, and educational purposes only.
 The author assumes no responsibility for misuse, unauthorized activity, or policy violations.
-
 
 ---
 
