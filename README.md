@@ -264,22 +264,6 @@ Planned enhancements under consideration:
 
 - Optional symbol or function boundary hints when available
 
-
-Explicit Non-Goals
-
-The following are intentionally out of scope:
-
-- Automatic obfuscation or mutation
-
-- Detection bypass logic
-
-- Exploit development features
-
-- Dynamic execution or analysis
-
-
-OffsetInspect will remain a read-only inspection utility.
-
 ---
 
 ## Workflow for Static Detection & Obfuscation of Programmable Executable
